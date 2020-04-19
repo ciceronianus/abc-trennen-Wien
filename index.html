@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Github pages: https://ciceronianus.github.io/abc-trennen-Wien/ -->
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Das Trenn-ABC - Müll richtig entsorgen (Wien)</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+
+
 
     <!-- import w3css -->
   
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
     <!-- google fonts -->
     <link
@@ -18,26 +25,36 @@
     />
 
     <!-- My own styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- Navbar -->
+<header class="w3-container">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+   
+   <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Trennen</a>
+   <a href="map.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Karte</a>
+   <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Über</a>
+
+   
+ 
+  </div>
+ 
+  <div class="w3-display-container w3-animate-opacity">
+   <img src="img/wien_gelbe_old_optimized.png" alt="Boat" style="width:100%;min-height:200px; max-height: 300px; object-fit: cover; object-position: 0px -50px">
+   <div class="w3-display-middle w3-large" style="color: white;"><h1>Das Trenn-ABC</h1></div>
+       
+        <div class="w3-display-bottommiddle w3-container" style="color:white"><p>Müll richtig entsorgen in Wien seit 2020.</p></div>
+   </div>
+ </header>
+
     <div class="w3-container">
       
-      <div class="w3-container">
-        <h1>Das Trenn-ABC</h1>
-        <p class="lead">Müll richtig entsorgen in Wien seit 2020.</p>
-      </div>
-
       
+     
     <br />
-      <div class="w3-panel w3-yellow">
-        Die Datenquelle:
-        <a
-          href="https://www.wien.gv.at/umwelt/ma48/beratung/muelltrennung/mistabc.html"
-          >Stadt Wien</a
-        >.
-      </div>
+     
 
        <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="ABCinput">
       
@@ -2944,7 +2961,7 @@
     
 
 
-      <script src="script.js"></script>
+      <script src="js/script.js"></script>
     </div>
   </body>
 </html>
