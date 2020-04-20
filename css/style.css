@@ -1,12 +1,38 @@
 /* CSS files add styling rules to your content */
+#ABCtable {
+  word-break: break-all;
+}
 
 .gelbe_tonne {
   background-color: yellow;
 }
 
 .gelbe_tonne:before {
+  
+  
+ 
+ 
   content: "🥫 ";
+
+
+
 }
+/* .gelbe_tonne:after{
+  background-image: url("/img/with_attribution/dumpster_yellow.svg");
+  background-size: 15px 15px;
+  background-position: center;
+  display: inline-block;
+ 
+ 
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  content:"";
+
+
+} */
 
 
 .biotonne {
@@ -58,8 +84,14 @@
   
 }
 
+.problemstoffsammelstelle{
+ 
+
+}
+
 .problemstoffsammelstelle:before {
   content: "⚠ ";
+  
 }
 
 

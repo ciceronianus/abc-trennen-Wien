@@ -20,3 +20,58 @@ function filterTable(event) {
 }
 
 document.querySelector('#ABCinput').addEventListener('keyup', filterTable, false);
+
+/*gelbe Tonne*/
+// var gelbeTonneMatches = document.getElementsByClassName("gelbe_tonne");
+
+// console.log(gelbeTonneMatches);
+// console.log(gelbeTonneMatches.length)
+
+// for (var i=0; i<gelbeTonneMatches.length; i++){
+//     gelbeTonneMatches.item(i).classList.add('w3-tag');
+//     gelbeTonneMatches.item(i).classList.add('w3-yellow');
+//     console.log(gelbeTonneMatches.item(i).classList);
+// }
+
+function findAllMarks(){
+    var allMarks = document.getElementsByTagName("mark");
+    console.log(allMarks);
+    console.log(allMarks.length);
+
+    for (var i=0; i<allMarks.length; i++){
+        console.log(allMarks.item(i).className);
+        switch (allMarks.item(i).className){
+            case "gelbe_tonne":
+                console.log("jo");
+                allMarks.item(i).classList.add('w3-tag');
+                allMarks.item(i).classList.add('w3-yellow');
+                
+                break;
+            case "biotonne":
+                allMarks.item(i).classList.add('w3-tag');
+                allMarks.item(i).classList.add('w3-brown');
+                break;
+            case "altpapier":
+                allMarks.item(i).classList.add('w3-tag');
+                allMarks.item(i).classList.add('w3-red');
+                break;
+            case "glascontainer":
+                    allMarks.item(i).classList.add('w3-tag');
+                    allMarks.item(i).classList.add('w3-green');
+                    break;
+            case "restmull":
+                allMarks.item(i).classList.add('w3-tag');
+                allMarks.item(i).classList.add('w3-orange');
+                break;
+
+            default:
+                allMarks.item(i).classList.add('w3-tag');
+                allMarks.item(i).classList.add('w3-pale-yellow');
+        }
+        
+        
+      
+    }
+}
+
+findAllMarks();
