@@ -42,10 +42,10 @@ function findAllMarks(){
         console.log(allMarks.item(i).className);
         switch (allMarks.item(i).className){
             case "gelbe_tonne":
-                console.log("jo");
+           
                 allMarks.item(i).classList.add('w3-tag');
                 allMarks.item(i).classList.add('w3-yellow');
-                
+              
                 break;
             case "biotonne":
                 allMarks.item(i).classList.add('w3-tag');
